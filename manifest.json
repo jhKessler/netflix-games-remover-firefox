@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Netflix Games Remover Extension",
+    "version": "1.0",
+    "description": "Removes Netflix games Header and Section.",
+    "content_scripts": [
+      {
+        "matches": ["*://*.netflix.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
